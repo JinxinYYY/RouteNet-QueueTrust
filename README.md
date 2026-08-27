@@ -16,6 +16,20 @@ M_q   = concat(sum_i x_qi, g_q * e_q)
 
 Here, `e_q` is the learned distribution encoding and `tau` controls how quickly the auxiliary channel becomes trusted. The default is `tau = 4`. The original sum channel is never attenuated.
 
+## Results
+
+QueueTrust achieves the lowest average MAPE in the scalability test. Because MAPE is an error metric, lower values are better.
+
+| Model | Average test MAPE | Absolute reduction vs. RouteNet-Fermi | Relative error reduction vs. RouteNet-Fermi |
+|---|---:|---:|---:|
+| RouteNet-Fermi | 1.060% | — | — |
+| Distribution-Aware Queue | 0.942% | 0.118 percentage points | 11.13% |
+| **QueueTrust** | **0.823%** | **0.237 percentage points** | **22.36%** |
+
+QueueTrust therefore reduces average prediction error by **22.36%** relative to the original RouteNet-Fermi model. It also improves on the ungated Distribution-Aware Queue model by **0.119 percentage points**, corresponding to a **12.63%** relative error reduction.
+
+The advantage becomes more pronounced on larger topologies. At approximately 300 nodes, QueueTrust records about **1.20% MAPE**, compared with about **2.13%** for RouteNet-Fermi—an error reduction of roughly **44%**. These 300-node values are read from the plotted topology-size curve and are therefore approximate.
+
 ## Repository structure
 
 ```text
