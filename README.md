@@ -1,4 +1,4 @@
-# RouteNet Reliability Gate
+# RouteNet QueueTrust
 
 Reliability-gated, distribution-aware queue aggregation for RouteNet-Fermi scalability experiments.
 
@@ -37,4 +37,3 @@ python run_five_seeds.py --source-root /path/to/RouteNet-Fermi --dry-run
 ```
 
 See the model-specific README in that directory for the full training workflow.
-
