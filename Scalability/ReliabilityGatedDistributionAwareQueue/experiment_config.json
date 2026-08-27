@@ -1,0 +1,14 @@
+{
+  "experiment": "reliability_gated_distribution_aware_scalability_5seed_v1",
+  "seeds": [1234, 2026, 3407, 5678, 9012],
+  "epochs": 25,
+  "steps_per_epoch": 2500,
+  "validation_file_modulus": 200,
+  "shuffle_buffer": 256,
+  "learning_rate": 0.001,
+  "clipnorm": 1.0,
+  "lr_patience": 2,
+  "reliability_tau": 4.0,
+  "encoder_hidden_dim": 32,
+  "per_topology_evaluation": true
+}

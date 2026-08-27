@@ -1,0 +1,5 @@
+# TensorFlow 2.6 is supplied by the current RunPod image.
+# Do not reinstall TensorFlow inside the container.
+# tensorflow/tensorflow:2.6.0-gpu-jupyter uses Python 3.6.
+# NetworkX 2.6 requires Python >=3.7; 2.5.1 provides the APIs used here.
+networkx==2.5.1
